@@ -1,0 +1,48 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background: red;
+    padding: 5px;
+    max-height: 20px;
+}
+
+#container {
+    flex: 1;
+    display: grid;
+    grid-gap: 4px;
+    margin: 4px;
+    grid-template-rows: repeat((--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    max-height: 25px;
+}
