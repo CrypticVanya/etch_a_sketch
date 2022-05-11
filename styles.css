@@ -16,25 +16,37 @@ body {
 .header {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background: red;
-    padding: 5px;
+    padding: 15px;
     max-height: 20px;
+    color: white;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 #container {
     flex: 1;
     display: grid;
-    grid-gap: 4px;
-    margin: 4px;
-    grid-template-rows: repeat((--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+    max-height: 960px;
 }
 
 .grid-item {
-    padding: 1em;
-    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
     text-align: center;
+    
 }
 
 
