@@ -11,3 +11,18 @@ function makeRows(rows, cols) {
 }
 
 makeRows(16,16)
+
+// loop to create the grid
+
+const gridItem = document.querySelectorAll(".grid-item")
+
+gridItem.forEach((item) => {
+    item.addEventListener('mouseenter', (e) => {
+        e.target.style.background = 'purple'
+
+        setTimeout(function() {
+            e.target.style.background = ""
+        }, 750)
+    }, false)
+})
+
