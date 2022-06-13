@@ -17,7 +17,8 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-around;
-    background: red;
+    background: rgb(221, 160, 221, 0.75);
+    box-shadow: 0px 5px 10px 0px rgba(173, 0, 135, 0.25);
     padding: 15px;
     max-height: 20px;
     color: white;
@@ -44,9 +45,7 @@ ul {
 .grid-item {
     padding: 0px;
     margin: 0px;
-    border: 1px solid rgba(128, 128, 128, 0.171);
-    text-align: center;
-    
+    text-align: center; 
 }
 
 
@@ -55,7 +54,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    max-height: 25px;
+    background-color: rgb(221, 160, 221, 0.5);
+    max-height: 35px;
+    gap: 8px;
 }
 
